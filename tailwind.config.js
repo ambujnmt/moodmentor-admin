@@ -51,6 +51,6 @@ module.exports = {
   },
   darkMode: "class",
   plugins: [
-    heroui(), // HeroUI plugin must be last
+    heroui(), // HeroUI plugin
   ],
 };
