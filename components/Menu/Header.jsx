@@ -108,8 +108,8 @@ export default function Header({ menuOpen, toggleMenu }) {
             <ul className="text-sm !pl-0 m-0">
               <li className="p-3 hover:bg-gray-200 hover:rounded-t-md cursor-pointer flex hover:text-[#3d7754]">
                 {/* {translateText("profile")} */}
-                <Link href="/profile/editProfile" className="text-[14px] !text-[#000]">
-                  <FaRegUser className="relative top-[5px]" />&nbsp; My Account
+                <Link href="/profile/editProfile" className="text-[14px] !text-[#000] text-primary-[unset]">
+                  <FaRegUser className="relative top-[0px]" />&nbsp; My Account
                 </Link>
               </li> 
               <hr className="m-0" />

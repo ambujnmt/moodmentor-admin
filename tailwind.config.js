@@ -6,7 +6,8 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}", // HeroUI classes
   ],
   theme: {
     extend: {
@@ -25,13 +26,22 @@ module.exports = {
         custom5CB85C: "#5CB85C",
       },
       screens: {
-        xs: "100%",
-        sm: "100%",
+        xs: "475px",
+        sm: "640px",
         md: "768px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
         "3xl": "1920px",
+      },
+      keyframes: {
+        slowBounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-4px)" },
+        },
+      },
+      animation: {
+        "slow-bounce": "slowBounce 3s ease-in-out infinite",
       },
     },
     container: {
@@ -40,5 +50,7 @@ module.exports = {
     },
   },
   darkMode: "class",
-  plugins: [heroui()],
+  plugins: [
+    heroui(), // HeroUI plugin must be last
+  ],
 };
