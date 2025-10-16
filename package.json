@@ -12,7 +12,7 @@
     "@canvasjs/react-charts": "^1.0.2",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@heroui/react": "^2.4.8",
+    "@heroui/react": "^2.8.5",
     "@mdi/font": "^7.4.47",
     "@mui/material": "^6.0.1",
     "@mui/x-charts": "^8.14.0",
